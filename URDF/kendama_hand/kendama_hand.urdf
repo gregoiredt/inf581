@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<robot name="kendama_hand">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00037189284550855024 4.342056230716583e-09 0.07388549981206773"/>
+    <mass value="0.0388"/>
+    <inertia ixx="0.00013876265331407" ixy="8.608238505140944e-12" ixz="9.324963745512564e-07" iyy="0.00015365967464165743" iyz="-4.0975484908834933e-11" izz="2.6303135274213745e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/kendama_hand.obj" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/kendama_hand.obj" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>
